@@ -3,7 +3,7 @@ import { StyleSheet, View, FlatList, Alert, Vibration } from 'react-native';
 import { Button, Card, Text } from '@rneui/themed';
 import * as SQLite from 'expo-sqlite';
 
-export default function HistoryScreen({ navigation }) {
+export default function HistoryScreen() {
 
   const [activities, setActivities] = useState([]);
 
@@ -55,7 +55,6 @@ export default function HistoryScreen({ navigation }) {
               <Text h4 style={{paddingBottom: 20}}>{item.duration}</Text>
               <Button 
                 raised icon={{ name: 'delete', color: 'white' }}
-                containerStyle={{ }} 
                 color={"red"} 
                 title="POISTA" 
                 onPress={() => {deleteItem(item.id); Vibration.vibrate(150)}}/>

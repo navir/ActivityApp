@@ -4,7 +4,7 @@ import { Button, Text, Card, Icon, Image } from '@rneui/themed';
 import * as Location from 'expo-location';
 
 
-export default function HomeScreen({ navigation, route }) {
+export default function HomeScreen({ navigation }) {
 
   API_KEY = process.env.EXPO_PUBLIC_GOOGLE_API_KEY;
   APP_ID = process.env.EXPO_PUBLIC_OWM_APP_ID;
